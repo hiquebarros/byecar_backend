@@ -3,7 +3,6 @@ import PartnerController from "../controllers/Partner.controller";
 
 const PartnerRouter = Router();
 
-PartnerRouter.get("", (req, res) => res.status(200).json({message: "oi"}));
-
+PartnerRouter.get("", PartnerController.getUserFromPartner);
 
 export default PartnerRouter;
