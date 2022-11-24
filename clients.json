@@ -1,0 +1,20 @@
+[
+    {
+        "id": "970f0232-6c06-11ed-a1eb-0242ac120002",
+        "name": "Henrique",
+        "email": "henrique1_barros@hotmail.com",
+        "cellphone": "51999290491"
+    },
+    {
+        "id": "853535b2-6c0c-11ed-a1eb-0242ac120002",
+        "name": "Tiago Sabadini",
+        "email": "tiago_sabadini@gmail.com",
+        "cellphone": "51999290492"
+    },
+    {
+        "id": "95ec05ac-6c0c-11ed-a1eb-0242ac120002",
+        "name": "Thiago Eloy",
+        "email": "thiago_eloy@hotmail.com",
+        "cellphone": "51999290493"
+    }
+]
