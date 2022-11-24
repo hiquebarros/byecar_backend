@@ -16,8 +16,7 @@
   },
   "scripts": {
     "dev": "ts-node-dev --ignore-watch node_modules src/app.ts",
-    "build": "tsc",
-    "typeorm": "typeorm-ts-node-commonjs"
+    "build": "tsc"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
