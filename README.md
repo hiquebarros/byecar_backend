@@ -13,10 +13,9 @@ Nota: ao clonar este projeto você precisa criar manualmente o arquivo `.env`, c
 ### Passo a passo:
 
 1. No seu terminal, clone a aplicação com o seguinte comando: `git clone git@github.com:hiquebarros/byecar_backend.git`
-2. Baixe as dependêncas do projeto utilizando o gerenciador de pacotes que preferir.
-   Por exemplo:
+2. Baixe as dependêncas do projeto utilizando o gerenciador de pacotes que preferir, com os seguintes comandos:
    `yarn`
    ou
    `npm install`
-3. Crie um arquivo .env na raiz do projeto e cole o conteúdo do .env.example.
+3. Crie um arquivo .env na raiz do projeto e cole o conteúdo do .env.example. (O correto seria não exibir a secret_key no .env.example, mas dessa forma conseguimos agilizar a correção do teste)
 4. Agora, com as variáveis de ambiente já configuradas, com o comando `yarn dev` sua aplicação deve ser iniciada na porta local 3000.
