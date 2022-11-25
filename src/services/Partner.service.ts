@@ -13,7 +13,7 @@ var clients: IClient[] = require("../../clients.json");
 class PartnerService {
   //Simulação do sistema de authenticação da API do parceiro
   private partnerApiTokenValidator = (propToken: string) => {
-    if (!propToken) throw new AppError("Invalid Token", 401);
+    if (!propToken) throw new AppError("Token not found", 401);
 
     const token = propToken.split(" ")[1];
 
@@ -38,9 +38,12 @@ class PartnerService {
         return item.id === decoded.id;
       });
 
+      if (!client) throw new AppError("Invalid token", 401);
+      
+      //Simulando delay da api
       setTimeout(() => {
-        return resolve(client);
-      }, 2000);
+          return resolve(client); 
+      }, 1000);
     });
     return client;
   };
@@ -50,8 +53,8 @@ class PartnerService {
     try {
       const client = await this.fakeApiRetrieve(token);
       return client;
-    } catch (error) {
-      throw new AppError("Partner API Error", 400);
+    } catch (error: any) {
+      throw new AppError(error.message, error.statusCode);
     }
   };
 
