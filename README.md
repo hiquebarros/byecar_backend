@@ -17,7 +17,7 @@ Nota: ao clonar este projeto você precisa criar manualmente o arquivo `.env`, c
    `yarn`
    ou
    `npm install`
-3. Crie um arquivo .env na raiz do projeto e cole o conteúdo do .env.example. (O correto seria não exibir a secret_key no .env.example, mas dessa forma conseguimos agilizar a correção do teste)
+3. Crie um arquivo .env na raiz do projeto e cole o conteúdo do .env.example.
 4. Agora, com as variáveis de ambiente já configuradas, com o comando `yarn dev` sua aplicação deve ser iniciada na porta local 3000.
 
 ### Testes:
