@@ -15,8 +15,4 @@ app.use("/", PartnerRouter);
 
 app.use(handleAppErrorMiddleware);
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log("App running");
-});
-
 export default app;
