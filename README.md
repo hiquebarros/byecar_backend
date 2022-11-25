@@ -23,3 +23,7 @@ Nota: ao clonar este projeto você precisa criar manualmente o arquivo `.env`, c
 ### Testes:
 
 Foram criados testes para certificar a eficiência dos middlewares de validação de token, para rodar os testes basta um `yarn test` no terminal. (É importante já ter baixado as dependências do projeto antes de rodar os testes).
+
+### Rotas:
+
+A API possui apenas uma rota de GET. endpoint: localhost:3000/
