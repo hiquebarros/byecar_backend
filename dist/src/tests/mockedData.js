@@ -1,0 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.wrongSecretKeyToken = exports.emptyPayloadToken = exports.correctToken = void 0;
+exports.correctToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWQiOiI5NzBmMDIzMi02YzA2LTExZWQtYTFlYi0wMjQyYWMxMjAwMDIiLCJpYXQiOjE1MTYyMzkwMjJ9.8RISrSnMjaxxDA-EGmBDMQWmxxVvCXvxMmEYn1fl4Mg";
+exports.emptyPayloadToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWF0IjoxNTE2MjM5MDIyfQ.GotXZnyA_3esVFiTbXUrqM5KHgcMBRlDvFKB6Mi3sPA";
+exports.wrongSecretKeyToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWF0IjoxNTE2MjM5MDIyfQ.oWcqvFmq7rZ8Af0c8s2esd-YSmwYrLIZo8MBgcIrHSA";
