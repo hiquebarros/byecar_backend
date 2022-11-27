@@ -12,7 +12,7 @@ describe("Testing authorization", () => {
         expect(response.status).toBe(200)
     })
 
-    test("Should not be able to retrieve user without token", async () => {
+    test("Should not be able to retrieve user without a token", async () => {
         const response = await request(app)
         .get("/")
         
@@ -20,7 +20,7 @@ describe("Testing authorization", () => {
         expect(response.status).toBe(401)
     })
 
-    test("Should not be able to retrieve user with empty payload token", async () => {
+    test("Should not be able to retrieve user with an empty payload token", async () => {
         const response = await request(app)
         .get("/")
         .set('Authorization', `Bearer ${emptyPayloadToken}`)
@@ -29,7 +29,7 @@ describe("Testing authorization", () => {
         expect(response.status).toBe(401)
     })
 
-    test("Should not be able to retrieve user without broken token", async () => {
+    test("Should not be able to retrieve user with a broken token", async () => {
         const response = await request(app)
         .get("/")
         .set('Authorization', `Bearer ${wrongSecretKeyToken}`)
